@@ -520,14 +520,20 @@ h3 {
 
   /* Мэйн моб */
   .main__container {
+    display: flex;
+    flex-direction: column;
     padding: 0 10px;
-    &_1,
-    &_2 {
+    &_1 {
       display: block;
       width: 100%;
     }
-    &_2_text-box {
+    &_2 {
+      display: block;
       width: 100%;
+      order: 1;
+      &_text-box {
+        width: 100%;
+      }
     }
     p {
       text-align: center;

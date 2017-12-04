@@ -480,12 +480,18 @@ h3 {
   }
   /* Мэйн моб */
   .main__container {
+    display: flex;
+    flex-direction: column;
     padding: 0 10px;
   }
-  .main__container_1,
+  .main__container_1 {
+    display: block;
+    width: 100%;
+  }
   .main__container_2 {
     display: block;
     width: 100%;
+    order: 1;
   }
   .main__container_2_text-box {
     width: 100%;
