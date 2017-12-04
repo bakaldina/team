@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Команда Недра-Эксперт</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="header-mobile">
+        <input class="menu-check" type="checkbox" id="menu-check-mobile">
+        <div class="header-mobile__panel">
+            <label for="menu-check-mobile" class="header-mobile__panel_burger">
+                <span></span>
+            </label>
+            <div class="header-mobile__panel_title">
+                <p>поиск участков</p>
+            </div>
+            <div class="header-mobile__panel_btn"></div>
+        </div>
+        <div class="header-mobile__menu">
+            <div class="header-mobile__menu_item">
+                <div class="header-mobile__menu_item-info-logo">
+                    <a href="index.html">
+                        NEDRA EXPERT
+                    </a>
+                </div>
+                <ul class="main-menu">
+                    <li class="main-menu_list">
+                        <a href="/search">поиск участков</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/ratings">рейтинги</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/analytics">аналитика</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/reference">справочники</a>
+                    </li>
+                    <li class="main-menu_list">
+                        <a href="/assessment">оценка</a>
+                    </li>
+                </ul>
+                <ul class="register-menu">
+                    <li class="register-menu_list">
+                        <a href="/Account/Login">вход</a>
+                    </li>
+                    <li class="register-menu_list">
+                        <a href="/Account/Register">регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header__menu">
+            <div class="header__menu_item">
+                <ul>
+                    <a href="https://nedraexpert.ru">
+                        <div class="main-logo"></div>
+                    </a>
+                    <li class="menu_icon">
+                        <a href="javascript:;" id="menu_icon">
+                            <span></span>
+                        </a>
+                    </li>
+                    <li class="center">
+                        <a href="/search">поиск участков</a>
+                    </li>
+                    <li class="center">
+                        <a href="/ratings">рейтинги</a>
+                    </li>
+                    <li class="center">
+                        <a href="/analytics">аналитика</a>
+                    </li>
+                    <li class="center">
+                        <a href="/reference ">справочники</a>
+                    </li>
+                    <li class="center">
+                        <a href="/assessment ">оценка</a>
+                    </li>
+                    <li>
+                        <a href="/Account/Login">вход</a>
+                    </li>
+                    <li>
+                        <a href="/Account/Register">регистрация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dop_menu">
+                <ul>
+                    <li class="center">
+                        <a href="/wip">Цены</a>
+                    </li>
+                    <li class="center">
+                        <a href="/wip">Карты</a>
+                    </li>
+                    <li class="center">
+                        <a href="/wip">Опросы</a>
+                    </li>
+                    <li class="center">
+                        <a href="/wip">Партнеры</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1>Команда Недра-Эксперт</h1>
+    </div>
+
+    <div class="main">
+        <!-- <div class="main__menu"></div> -->
+        <div class="main__container">
+            <div class="main__container_1">
+                <img alt="logo" src="image/logo_0.png">
+            </div>
+            <div class="main__container_2">
+                <p class="about">Недра-Эксперт ставит своей целью:
+                    <br>Сделать горно-геологическую отрасль в России более открытой, менее рисковой и доступной для более широкого
+                    круга представителей бизнес-сообщества, а работу менеджеров, геологов, технологов, проектировщиков максимально
+                    удобной.
+                </p>
+            </div>
+        </div>
+        <div class="main__container">
+            <div class="main__container_2">
+                <div class="main__container_2_text-box">
+                    <h3 class="right">Сергей Маху</h3>
+                    <p class="right">
+                        <em>Основатель и директор по развитию Недра-Эксперт</em>
+                        <br>
+                        <br>
+                        <a href="mailto:mahus@nedraexpert.ru" class="email">mahus@nedraexpert.ru</a>
+                        <br>
+                    </p>
+                    <p class="right">Ранее: начальник отдела лицензирования Роснедра, менеджмент буровой компании, глава брокерской компании.
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="main__container_1">
+                <img alt="Сергей Маху" src="image/mahu.jpg">
+            </div>
+        </div>
+        <div class="main__container">
+            <div class="main__container_1">
+                <img alt="Анатолий Зулькарнаев" src="image/zulkarnaev.jpg">
+            </div>
+            <div class="main__container_2">
+                <div class="main__container_2_text-box">
+                    <h3>Анатолий Зулькарнаев</h3>
+                    <p>
+                        <em>CEO Недра-Эксперт</em>
+                        <br>
+                        <br>
+                        <a href="mailto:anzulkarnaev@nedraexpert.ru" class="email">anzulkarnaev@nedraexpert.ru</a>
+                        <br>
+                    </p>
+                    <p>Ранее: зам. начальника отдела лицензирования Роснедра, научный сотрудник ЦНИГРИ.
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+            <div class="main__container_2">
+                <div class="main__container_2_text-box">
+                    <h3 class="right">Роман Амосов</h3>
+                    <p class="right">
+                        <em>Геолог-консультант</em>
+                        <br>
+                        <br>
+                    </p>
+                    <p class="right">Ранее: ведущий научный сотрудник ЦНИГРИ, кандидат геолого-минералогических наук, лауреат Гос.премии СССР
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="main__container_1">
+                <img alt="Роман Амосов" src="image/amosov.jpg">
+            </div>
+        </div>
+        <div class="main__container">
+            <div class="main__container_1">
+                <img alt="Александр Попов" src="image/popov.jpg">
+            </div>
+            <div class="main__container_2">
+                <div class="main__container_2_text-box">
+                    <h3>Александр Попов</h3>
+                    <p>
+                        <em>Сопровождение и проектирование разработки месторождений ТПИ</em>
+                        <br>
+                        <br>
+                    </p>
+                    <p>Ранее: советник руководителя Роснедра
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+            <div class="main__container_2">
+                <div class="main__container_2_text-box">
+                    <h3 class="right">Екатерина Бакалдина</h3>
+                    <p class="right">
+                        <em>Web-разработка, компьютерное моделирование нефтяных месторождений</em>
+                        <br>
+                        <br>
+                        <a href="mailto:bakaldina@nedraexpert.ru" class="email">bakaldina@nedraexpert.ru</a>
+                        <br>
+                    </p>
+                    <p class="right">Ранее: моделирование месторождений, РГУНГ им. Губкина
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="main__container_1">
+                <img alt="Екатерина Бакалдина" src="image/bakaldina.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__item">
+            <div class="footer__item_column">
+                <ul class="footer__item_column-1">
+                    <li>
+                        <a href="/search">Поиск участков</a>
+                    </li>
+                    <li>
+                        <a href="/ratings">Рейтинги</a>
+                    </li>
+                    <li>
+                        <a href="/analytics">Аналитика</a>
+                    </li>
+                    <li>
+                        <a href="/reference ">Справочники</a>
+                    </li>
+                    <li>
+                        <a href="/confidential ">Политика конфиденциальности</a>
+                    </li>
+                    <li class="copyright">
+                        © 2018 Nedra-Expert
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item_column">
+                <ul class="footer__item_column-3">
+                    <li class="">
+                        <a href="/about-us">О нас</a>
+                    </li>
+                    <li class="">
+                        <a href="/contacts">Контакты</a>
+                    </li>
+                    <li class="">
+                        <a href="/offer">Пользовательское соглашение</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="tel:+74951158916">+7 (495) 115-8916</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="mailto:info@nedraexpert.ru">info@nedraexpert.ru</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item_column">
+                <ul class="footer__item_column-3">
+                    <li class="li-text-color">
+                        <a href="/Account/Login">Вход</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="/Account/Register">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item_column footer__item_column-4">
+                <p>Разработано в «Роскомпьютинг»</p>
+                <a href="http://www.roscomputing.com/ru/Main.aspx" target="_blank">
+                    <img src="image/rc_logo.png" title="RosComputing">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-mobile">
+        <div class="footer-mobile__item">
+            <div class="footer-mobile__item_column">
+                <ul class="footer-mobile__item_column-1">
+                    <li class="">
+                        <a href="/search">Поиск участков</a>
+                    </li>
+                    <li class="">
+                        <a href="/ratings">Рейтинги</a>
+                    </li>
+                    <li class="">
+                        <a href="/analytics">Аналитика</a>
+                    </li>
+                    <li class="">
+                        <a href="/reference ">Справочники</a>
+                    </li>
+                    <li class="">
+                        <a href="/confidential ">Политика конфиденциальности</a>
+                    </li>
+                    <li class="">
+                        <a href="/about-us">О нас</a>
+                    </li>
+                    <li class="">
+                        <a href="/contacts">Контакты</a>
+                    </li>
+                    <li class="">
+                        <a href="/offer">Пользовательское соглашение</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="tel:+74951158916">+7 (495) 115-8916</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="email: info@nedraexpert.ru">info@nedraexpert.ru</a>
+                    </li>
+                    <li class="copyright">
+                        © 2018 Nedra-Expert
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-mobile__item_column">
+                <ul class="footer-mobile__item_column-2">
+                    <li class="li-text-color">
+                        <a href="/Account/Login">Вход</a>
+                    </li>
+                    <li class="li-text-color">
+                        <a href="/Account/Register">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-mobile__item_end">
+            <p>Разработано в «Роскомпьютинг»</p>
+            <a href="http://www.roscomputing.com/ru/Main.aspx" target="_blank">
+                <img src="image/rc_logo.png" title="RosComputing">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
